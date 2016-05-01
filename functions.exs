@@ -2,7 +2,7 @@ defmodule ListManipulation do
   def reverse([]) do
     []
   end
-  
+
   def reverse(list) do
     reverse(tl(list)) ++ [hd(list)]
   end
@@ -18,7 +18,9 @@ defmodule Math do
   end
 
   def quadruple(n) do
-    double(double(n))
+    n
+    |> double
+    |> double
   end
 
   def factorial(0), do: 1
@@ -39,3 +41,4 @@ defmodule Math do
     gcd(y, rem(x,y))
   end
 end
+
